@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+// Centralize Logger
 @Aspect
 @Component
 public class CentralLoggingHandler {
