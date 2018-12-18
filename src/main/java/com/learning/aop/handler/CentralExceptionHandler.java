@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.ui.Model;
 
 
+// Centralize exception handling
 @Component
 @Aspect
 public class CentralExceptionHandler {
@@ -26,6 +27,7 @@ public class CentralExceptionHandler {
 			model.addAttribute("errorMessage", e.getMessage());
 			return "errorPage";
 		}
+		
 		
 		return view;
 	}
